@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Giỏ hàng của bạn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h2>Danh sách sản phẩm</h2>
+  <button onclick="themVaoGio('Sản phẩm 1')">Thêm Sản phẩm 1 vào giỏ</button>
+  <button onclick="themVaoGio('Sản phẩm 2')">Thêm Sản phẩm 2 vào giỏ</button>
+
+  <h2>Giỏ hàng của bạn</h2>
+  <ul id="gio"></ul>
+
+  <!-- ĐĂNG KÝ -->
+  <h2>Đăng ký</h2>
+  <label for="dkUser">Tên đăng nhập</label><br>
+  <input id="dkUser" type="text" placeholder="Tên đăng nhập" required><br>
+  <label for="dkPass">Mật khẩu</label><br>
+  <input id="dkPass" type="password" placeholder="Mật khẩu" required><br>
+  <button onclick="dangKy()">Đăng ký</button>
+
+  <!-- ĐĂNG NHẬP -->
+  <h2>Đăng nhập</h2>
+  <label for="dnUser">Tên đăng nhập</label><br>
+  <input id="dnUser" type="text" placeholder="Tên đăng nhập" required><br>
+  <label for="dnPass">Mật khẩu</label><br>
+  <input id="dnPass" type="password" placeholder="Mật khẩu" required><br>
+  <button onclick="dangNhap()">Đăng nhập</button>
+
+  <p id="trangThai"></p>
+</body>
+</html>
