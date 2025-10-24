@@ -1,25 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoa CNTTKD – Học HTML</title>
-    <meta name="keywords" content="Khoa CNTTKD, HTML" /> 
-    <meta property="og:title" content="Khoa CNTTKD – Học HTML" />
-    <meta property="og:description" content="Học cơ bản về HTML" />
-    <meta property="og:image" content="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png" />
+    <title>Thông Tin Cá Nhân & Bài Tập Môn PTUD WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #004d99;
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 5px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #ccc;
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .exercises li {
+            margin-bottom: 10px;
+        }
+        .exercises a {
+            font-size: 1.1em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .exercises a:hover {
+            color: #cc0000;
+        }
+    </style>
 </head>
-<body Bgcolor="yellow" alink="red">
-    <h1>Chào mừng đến với nội dung học HTML tại Khoa CNTTKD</h1>
-    <img width="1200" height="300" src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png" />
-    <a href="https://bit.ueh.edu.vn/dao-tao">Đào tạo</a>
-    <p>
-        Đây là đoạn văn
-        chứa          nhiều khoảng trắng
-        trong mã          nguồn,
-        nhưng        trình duyệt
-        bỏ qua nó.
-    </p>
+<body>
+
+<div class="container">
+    <h1>Thông Tin Cá Nhân</h1>
+        <div>
+            <p><strong>Họ Tên:</strong>Vũ Duy Hải</p>
+            <p><strong>Mã số sinh viên:</strong> 31231023871</p>
+            <p><strong>Lớp:</strong> EEP002</p>
+        </div>
+    </div>
+
+    <h2>Social & Contact</h2>
+    <div class="social-links">
+        <a href="mailto:vdhai141005@gmail.com">Email</a>
+    </div>
+
+    <hr style="margin: 30px 0;">
+
+    <h2>Mục Lục Bài Tập</h2>
+    <ul class="exercises">
+        <li>
+            <a href="BaiTapVeNha.html">Bài Tập 1: Phát triển ứng dụng WEB/TMĐT (Cấu trúc & Định dạng)</a>
+        </li>
+        <li>
+            <a href="HTML5.html">Bài Tập 2: HTML5 Structure (Chuyển đổi Layout)</a>
+        </li>
+        </ul>
+</div>
 
 </body>
 </html>
