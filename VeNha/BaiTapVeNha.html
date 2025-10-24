@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trang mẫu - ĐHKT TP.HCM</title>
+  <style>
+    
+    <body id="top"> {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f0f8ff; 
+      color: #111;
+    }
+
+    <header id="cau3"> {
+      padding: 40px 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.6); 
+    }
+
+    h1.title {
+      margin: 0 0 10px 0;
+      text-align: center;       
+      color: blue;             
+      font-weight: 700;         
+      font-size: 2.2rem;
+    }
+
+    h2.department {
+      margin: 0;
+      text-align: right;        
+      color: red;             
+      font-style: italic;      
+      font-size: 1.4rem;
+    }
+
+    
+    .marquee-wrap {
+      overflow: hidden;
+      background: rgba(0,0,0,0.5);
+      padding: 8px 0;
+    }
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%; 
+      animation: marquee 12s linear infinite;
+      color: #fff;
+      font-weight: 600;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+   
+.major-columns {
+  display: flex; 
+  gap: 20px; 
+  margin-bottom: 25px;
+  flex-wrap: wrap; 
+}
+
+.major-item {
+  flex: 1 1 30%; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  overflow: hidden; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.major-image {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.major-content {
+  padding: 10px 15px;
+}
+
+.major-content h4 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #004d99; 
+  font-weight: bold;
+}
+
+.major-content p.description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  height: 5.6em; 
+  overflow: hidden; 
+}
+
+.major-content a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .major-columns {
+    flex-direction: column; 
+  }
+  .major-item {
+    flex: 1 1 100%; 
+  }
+}
+
+    main {
+      padding: 20px;
+      background: rgba(255,255,255,0.75);
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    .majors ul { margin-left: 1rem; }
+    .majors li { margin: 6px 0; }
+
+ 
+    @media (max-width: 480px) {
+      h1.title { font-size: 1.6rem; }
+      h2.department { font-size: 1rem; }
+      .marquee { font-size: 0.95rem; }
+    }
+    /* --- CSS Bổ sung cho Câu 7 (Bảng) và Câu 6 (Liên kết) --- */
+.contact-info {
+  text-align: right;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+.contact-info a {
+  color: blue;
+  text-decoration: none;
+}
+.ueh-table-wrap {
+  margin-top: 30px;
+}
+.ueh-logo-wrapper {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  /* Đảm bảo logo và tiêu đề ngang hàng */
+  display: flex; 
+  align-items: center; 
+}
+.art-table {
+  width: 100%;
+  border-collapse: collapse; /* Gộp các đường viền lại */
+  margin-top: 10px;
+  text-align: left;
+}
+.art-table th, .art-table td {
+  padding: 8px 12px;
+  border: 1px solid #004d99; /* Viền xanh đậm */
+  font-size: 1rem;
+}
+.art-table thead th {
+  background-color: #e0f7fa; /* Nền xanh nhạt cho tiêu đề */
+  color: #004d99; /* Chữ xanh đậm */
+  font-weight: bold;
+  text-align: center;
+}
+.art-table thead th:first-child {
+  color: #0000ff; /* Chữ xanh dương đậm cho ô 'Mạng nghệ thuật & giải trí' */
+}
+.jump-links ul {
+    list-style-type: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0;
+    margin-top: 5px;
+}
+.jump-links li {
+    margin: 5px 0;
+}
+.jump-links a {
+    color: #333;
+    text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  
+
+ 
+  <header>
+    <h1 class="title">Chào mừng bạn đến website của trường ĐHKT TP.HCM</h1>
+    <h2 class="department">Khoa Công Nghệ Thông Tin Kinh Doanh</h2>
+  </header>
+
+
+  <div class="marquee-wrap">
+    <div class="marquee">Chào mừng bạn đến website của trường ĐHKT TP.HCM — Hãy khám phá các chương trình đào tạo của chúng tôi!</div>
+  </div>
+
+
+  <div style="text-align:center; margin-top:12px;">
+    <audio controls autoplay loop>
+      <source src="audio.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio>
+    <p style="font-size:0.85rem; color:#333;">(Tự động phát nếu trình duyệt cho phép — để tắt, bấm Pause.)</p>
+  </div>
+
+  <main>
+  <h3>Phát triển ứng dụng WEB/TMĐT</h3>
+
+  <div class="major-columns" id="cau4">
+
+    <div class="major-item">
+      <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg" alt="Công nghệ Phần mềm" class="major-image">
+      <div class="major-content">
+        <h4>CÔNG NGHỆ PHẦN MỀM</h4>
+        <p class="description">
+          Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và viễn thông (ICT) xâm nhập mọi mặt đời sống kinh tế xã hội. Tổng thể thế giới trở thành một trong những mũi nhọn chiến lược…
+        </p>
+        <a href="http://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">Xem chi tiết &raquo;</a>
+      </div>
+    </div>
+
+    <div class="major-item">
+      <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg" alt="Ngành Thương mại điện tử" class="major-image">
+      <div class="major-content">
+        <h4>NGÀNH THƯƠNG MẠI ĐIỆN TỬ</h4>
+        <p class="description">
+          Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ, đóng góp lớn vào nền kinh tế số quốc gia.
+        </p>
+        <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">Xem chi tiết &raquo;</a>
+      </div>
+    </div>
+
+    <div class="major-item">
+      <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-770x385.jpg" alt="Hệ thống Thông tin Kinh doanh" class="major-image">
+      <div class="major-content">
+        <h4>HỆ THỐNG THÔNG TIN KINH DOANH</h4>
+        <p class="description">
+          Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành doanh nghiệp đang được các nhà quản lý đầu tư và phát triển mạnh mẽ để tối ưu hóa hiệu suất hoạt động.
+        </p>
+        <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">Xem chi tiết &raquo;</a>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+  
+  <section class="majors-links" id="cau5">
+    <h3>Đường dẫn chi tiết:</h3>
+    <ul>
+      <li>**CÔNG NGHỆ PHẦN MỀM:** link đến <a href="http://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank">http://bit.ueh.edu.vn/cong-nghe-phan-mem/</a></li>
+      <li>**Thương mại điện tử:** <a href="http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank">http://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/</a></li>
+      <li>**HỆ THỐNG THÔNG TIN KINH DOANH:** <a href="http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank">http://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/</a></li>
+    </ul>
+  </section>
+  <section class="jump-links">
+  <h3>Các Liên kết Nhanh:</h3>
+  <ul>
+    <li><a href="#cau3">Câu 3 (Header/Đầu trang)</a></li>
+    <li><a href="#cau4">Câu 4 (3 cột ngành đào tạo)</a></li>
+    <li><a href="#cau5">Câu 5 (Đường dẫn chi tiết)</a></li>
+    <li><a href="#top">Về đầu trang</a></li>
+  </ul>
+</section>
+  <hr>
+
+  <section class="majors">
+    <h3>Danh sách chuyên ngành đào tạo khác:</h3>
+    <ul>
+      <li><strong>Đại học</strong>
+        <ul>
+          <li>Hệ Thống thông tin quản lý (MIS)</li>
+          <li>Thương mại điện tử</li>
+          <li>ERP (Hoạch định Nguồn lực Doanh nghiệp)</li>
+        </ul>
+      </li>
+      <li><strong>Sau đại học</strong>
+        <ul>
+          <li>Thạc sỹ Công nghệ thiết kế thông tin & truyền thông</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <hr>
+
+<div class="ueh-table-wrap">
+  <table class="art-table">
+    <thead>
+      <tr>
+        <th colspan="2">Mạng nghệ thuật & giải trí</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Phim</td>
+        <td>Ngày chiếu</td>
+      </tr>
+      <tr>
+        <td>Sherlock Holmes</td>
+        <td>Thứ hai</td>
+      </tr>
+      <tr>
+        <td>Lovejoy</td>
+        <td>Thứ hai</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</main>
+</body>
+</html>
